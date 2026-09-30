@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · Foundations of Design</title>
+  <meta name="description" content="Learn about Foundations of Design — an independent journal exploring interior architecture, materials, and the art of living well.">
+  <meta name="author" content="Foundations of Design">
+  <link rel="canonical" href="https://www.foundationsofdesign.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About · Foundations of Design">
+  <meta property="og:description" content="An independent publication about interior design, architecture, and the art of living well in considered spaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.foundationsofdesign.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Foundations of Design",
+    "url": "https://www.foundationsofdesign.com/about.html",
+    "description": "About the editorial team and mission of Foundations of Design journal."
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #3d3d3d;
+      --muted: #6e6e6e;
+      --border: #e2ddd8;
+      --accent: #b15c2e;
+      --accent-soft: #f7efe8;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin-left: 0.4rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--ink);
+      line-height: 1;
+      padding: 0.2rem 0.5rem;
+    }
+
+    @media (max-width: 780px) {
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+      }
+      .main-nav.open {
+        display: block;
+      }
+      .main-nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ---------- ABOUT HERO ---------- */
+    .about-hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 1.5rem 3rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .about-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-hero .kicker {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .about-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-hero p {
+      font-size: 1.1rem;
+      color: var(--ink-light);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+      .about-hero {
+        padding: 2.5rem 1.5rem 2rem;
+      }
+    }
+
+    /* ---------- MAIN ABOUT CONTENT ---------- */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 3rem;
+      align-items: start;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    .about-main h2 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 2rem 0 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .about-main h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .about-main p {
+      color: var(--ink-light);
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .about-main blockquote {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--ink);
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      line-height: 1.6;
+    }
+
+    .about-main img {
+      border-radius: 12px;
+      margin: 1.8rem 0;
+      width: 100%;
+      max-height: 380px;
+      object-fit: cover;
+    }
+
+    .about-main ul {
+      margin: 1rem 0 1.8rem 1.5rem;
+      color: var(--ink-light);
+    }
+
+    .about-main li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* ---------- TEAM SECTION ---------- */
+    .team-section {
+      margin: 3.5rem 0;
+    }
+
+    .team-section h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .team-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .team-card:hover {
+      border-color: #cfc7bf;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.03);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1.2rem;
+      border: 3px solid var(--border);
+    }
+
+    .team-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+    }
+
+    .team-card .role {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    .team-card p {
+      font-size: 0.88rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    /* ---------- VALUES SECTION ---------- */
+    .values-section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      margin: 3rem 0;
+    }
+
+    .values-section h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .value-item {
+      text-align: center;
+    }
+
+    .value-item .icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .value-item h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    .value-item p {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    /* ---------- SIDEBAR ---------- */
+    .about-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .sidebar-widget {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem 1.5rem;
+    }
+
+    .sidebar-widget h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.7rem;
+    }
+
+    .sidebar-widget p {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+    }
+
+    .sidebar-widget ul {
+      list-style: none;
+    }
+
+    .sidebar-widget li {
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .sidebar-widget li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .newsletter-box {
+      background: var(--accent-soft);
+      border: 1px solid #e6d8cd;
+      border-radius: 14px;
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+    }
+
+    .newsletter-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .newsletter-box p {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      margin-bottom: 1.2rem;
+    }
+
+    .newsletter-box input {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1px solid #d6c9bd;
+      border-radius: 40px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      margin-bottom: 0.7rem;
+      outline: none;
+      background: white;
+    }
+
+    .newsletter-box button {
+      width: 100%;
+      background: var(--accent);
+      border: none;
+      border-radius: 40px;
+      padding: 0.75rem;
+      color: white;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: var(--font-sans);
+    }
+
+    .newsletter-box button:hover {
+      background: #8f4a22;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d6cfc8;
+      margin-top: 4rem;
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-grid a {
+      color: #b8afa7;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid #3a3633;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #8f8680;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+      .values-section {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .header-inner {
+        padding: 0.8rem 1rem;
+      }
+      .logo {
+        font-size: 1.4rem;
+      }
+      .logo span {
+        display: none;
+      }
+    }
+
+    /* utility */
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Foundations of Design home">
+      Foundations <span>of Design</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== ABOUT HERO ========== -->
+<section class="about-hero">
+  <div class="about-hero-inner">
+    <div class="kicker">About the Journal</div>
+    <h1>Spaces that hold meaning.<br>Ideas that build slowly.</h1>
+    <p>Foundations of Design is an independent publication about interior architecture, materials, light, and the quiet decisions that shape how we live.</p>
+  </div>
+</section>
+
+<!-- ========== MAIN ABOUT GRID ========== -->
+<div class="container">
+  <div class="about-grid">
+
+    <!-- LEFT COLUMN / MAIN -->
+    <main class="about-main" role="main">
+
+      <h2>Our Mission</h2>
+      <p>We believe that good design is not about trends or spectacle — it’s about the thoughtful arrangement of space, light, and material to support human life. Foundations of Design exists to slow down the conversation. We publish long-form essays, practical guides, and case studies that explore the fundamental principles of interior architecture: proportion, circulation, natural light, material honesty, and the psychology of colour and texture.</p>
+      <p>Our readers are design professionals, students, and curious enthusiasts who want more than surface-level inspiration. They come to us for depth, clarity, and a point of view that values longevity over novelty.</p>
+
+      <blockquote>“We are interested in the quiet, structural decisions — the ones that don’t photograph well but make a room feel right.”</blockquote>
+
+      <h2>What We Cover</h2>
+      <p>Our editorial scope is deliberately focused. We write about:</p>
+      <ul>
+        <li><strong>Interior design & architecture</strong> — residential and adaptive reuse, with an emphasis on spatial thinking.</li>
+        <li><strong>Materials & craft</strong> — how natural and honest surfaces age, and why patina matters.</li>
+        <li><strong>Lighting design</strong> — the layered approach, from daylight to artificial ambience.</li>
+        <li><strong>Space planning</strong> — circulation, small spaces, and the unseen architecture of daily life.</li>
+        <li><strong>Sustainable & passive design</strong> — low-tech, high-comfort strategies for real homes.</li>
+        <li><strong>Furniture & layout</strong> — practical rules and when to break them.</li>
+      </ul>
+
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=400&fit=crop" alt="Editorial desk with architectural drawings, material samples, and natural light">
+
+      <h2>How We Work</h2>
+      <p>Foundations of Design is reader-supported and independent. We do not accept sponsored content that compromises our editorial integrity. Our articles are written by practicing architects, interior designers, and design journalists who bring both technical knowledge and a love of the craft.</p>
+      <p>We publish on a monthly cadence, with occasional long-form guides and interviews. Every piece is reviewed by our editorial team for accuracy, clarity, and usefulness. We believe in showing our work — footnotes, references, and real-world examples are part of our standard.</p>
+      <p>If you have a project, a material, or an idea you’d like to share, we’d love to hear from you. Visit our <a href="contact.html" style="text-decoration:underline;">contact page</a> or write to us directly.</p>
+
+      <!-- TEAM -->
+      <section class="team-section" id="team">
+        <h2>The Editorial Team</h2>
+        <div class="team-grid">
+
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Portrait of Elena Marchetti, editor-in-chief">
+            <h3>Elena Marchetti</h3>
+            <div class="role">Editor-in-Chief</div>
+            <p>Architect and writer. Elena founded Foundations of Design after a decade of residential practice. She writes about space, material, and the daily rituals of home.</p>
+          </div>
+
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Portrait of Julian Hart, senior editor">
+            <h3>Julian Hart</h3>
+            <div class="role">Senior Editor</div>
+            <p>Julian is a lighting designer and technical editor. He oversees our guides on illumination, electrical planning, and the science of visual comfort.</p>
+          </div>
+
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Portrait of Mira Chen, contributing editor">
+            <h3>Mira Chen</h3>
+            <div class="role">Contributing Editor</div>
+            <p>Mira is a materials specialist and sustainable design advocate. She writes about natural finishes, embodied carbon, and the poetry of patina.</p>
+          </div>
+
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop" alt="Portrait of Theo Laurent, architecture editor">
+            <h3>Theo Laurent</h3>
+            <div class="role">Architecture Editor</div>
+            <p>Theo is a practicing architect focused on adaptive reuse and passive design. He leads our coverage of residential case studies and spatial theory.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VALUES -->
+      <section class="values-section">
+        <h2>What Guides Us</h2>
+        <div class="values-grid">
+          <div class="value-item">
+            <span class="icon">◻</span>
+            <h3>Depth over speed</h3>
+            <p>We publish less, but we go deeper. Every article is an invitation to think slowly and carefully.</p>
+          </div>
+          <div class="value-item">
+            <span class="icon">◻</span>
+            <h3>Material honesty</h3>
+            <p>We celebrate surfaces that age gracefully and spaces that reveal their making.</p>
+          </div>
+          <div class="value-item">
+            <span class="icon">◻</span>
+            <h3>Human experience</h3>
+            <p>Design is for people. We always return to the lived, sensory reality of a room.</p>
+          </div>
+          <div class="value-item">
+            <span class="icon">◻</span>
+            <h3>Independence</h3>
+            <p>Our editorial is free from advertiser influence. We answer to our readers.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="about-sidebar" role="complementary">
+
+      <!-- Editor -->
+      <div class="sidebar-widget">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Portrait of Elena Marchetti" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin-bottom:1rem; border:2px solid var(--border);">
+        <h3>From the Editor</h3>
+        <p>“We started Foundations of Design because we wanted a place where design writing could be both rigorous and beautiful. A place that respects the intelligence of our readers and the complexity of the built world.”</p>
+        <p style="font-size:0.8rem; color:var(--muted); margin-top:0.8rem;">— Elena Marchetti</p>
+      </div>
+
+      <!-- Quick facts -->
+      <div class="sidebar-widget">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Founded:</strong> 2021</li>
+          <li><strong>Based:</strong> Lisbon & London</li>
+          <li><strong>Format:</strong> Long-form articles & guides</li>
+          <li><strong>Cadence:</strong> Monthly</li>
+          <li><strong>Readers:</strong> 48k+ designers, architects, enthusiasts</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="newsletter-box">
+        <h3>The Design Letter</h3>
+        <p>Monthly essays, practical guides, and a single beautiful idea. No noise.</p>
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button type="button" onclick="alert('Thank you for subscribing to The Design Letter.')">Subscribe</button>
+      </div>
+
+      <!-- Contact -->
+      <div class="sidebar-widget">
+        <h3>Get in Touch</h3>
+        <p>We welcome pitches, feedback, and questions.</p>
+        <p style="font-size:0.85rem;"><a href="contact.html" style="text-decoration:underline;">Contact the editorial team →</a></p>
+        <p style="font-size:0.85rem; margin-top:0.5rem;"><a href="mailto:hello@foundationsofdesign.com" style="text-decoration:underline;">hello@foundationsofdesign.com</a></p>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <h4>Foundations of Design</h4>
+      <p style="color:#a89f97; line-height:1.6; max-width:280px;">An independent publication about interior design, architecture, and the art of living well in considered spaces.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Interiors</a></li>
+        <li><a href="index.html">Architecture</a></li>
+        <li><a href="index.html">Materials</a></li>
+        <li><a href="index.html">Lighting</a></li>
+        <li><a href="index.html">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html#team">Editorial Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Foundations of Design. All rights reserved.</span>
+    <span>Made with intention.</span>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    // ---------- MOBILE NAV ----------
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+
+    // ---------- SMOOTH NAV (prevent default for empty links) ----------
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

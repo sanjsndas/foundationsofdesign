@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · Foundations of Design</title>
+  <meta name="description" content="Browse all categories on Foundations of Design — interiors, architecture, materials, lighting, and guides.">
+  <meta name="author" content="Foundations of Design">
+  <link rel="canonical" href="https://www.foundationsofdesign.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · Foundations of Design">
+  <meta property="og:description" content="Browse all categories on Foundations of Design — interiors, architecture, materials, lighting, and guides.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.foundationsofdesign.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categories",
+    "url": "https://www.foundationsofdesign.com/categories.html",
+    "description": "Browse all categories on Foundations of Design."
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES (same as about/terms) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #3d3d3d;
+      --muted: #6e6e6e;
+      --border: #e2ddd8;
+      --accent: #b15c2e;
+      --accent-soft: #f7efe8;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER (exactly as about/terms) ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin-left: 0.4rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--ink);
+      line-height: 1;
+      padding: 0.2rem 0.5rem;
+    }
+
+    @media (max-width: 780px) {
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+      }
+      .main-nav.open {
+        display: block;
+      }
+      .main-nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ---------- CATEGORIES HERO ---------- */
+    .categories-hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 3.5rem 1.5rem 2.8rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .categories-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .categories-hero .kicker {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .categories-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .categories-hero p {
+      font-size: 1.05rem;
+      color: var(--ink-light);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .categories-hero h1 {
+        font-size: 2.2rem;
+      }
+      .categories-hero {
+        padding: 2.5rem 1.5rem 2rem;
+      }
+    }
+
+    /* ---------- CATEGORY GRID ---------- */
+    .categories-section {
+      margin-bottom: 4rem;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+    }
+
+    .category-card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background-color: #e8e2db;
+    }
+
+    .category-card-content {
+      padding: 1.5rem 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card-content h2 {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .category-card-content p {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.65;
+      margin-bottom: 1.2rem;
+      flex: 1;
+    }
+
+    .category-card-link {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: auto;
+    }
+
+    .category-card-link:hover {
+      color: #8f4a22;
+    }
+
+    .category-card-link::after {
+      content: "→";
+      font-size: 1rem;
+      transition: transform 0.15s;
+    }
+
+    .category-card-link:hover::after {
+      transform: translateX(3px);
+    }
+
+    .category-count {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.6rem;
+      font-weight: 500;
+    }
+
+    /* ---------- NEWSLETTER STRIP (full width) ---------- */
+    .newsletter-strip {
+      background: var(--accent-soft);
+      border: 1px solid #e6d8cd;
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      margin: 3rem 0 4rem;
+    }
+
+    .newsletter-strip h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .newsletter-strip p {
+      font-size: 1rem;
+      color: var(--ink-light);
+      max-width: 500px;
+      margin: 0 auto 1.8rem;
+      line-height: 1.7;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 440px;
+      margin: 0 auto;
+      gap: 0.6rem;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid #d6c9bd;
+      border-radius: 40px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      outline: none;
+      background: white;
+    }
+
+    .newsletter-form button {
+      background: var(--accent);
+      border: none;
+      border-radius: 40px;
+      padding: 0.8rem 2rem;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: var(--font-sans);
+      white-space: nowrap;
+    }
+
+    .newsletter-form button:hover {
+      background: #8f4a22;
+    }
+
+    @media (max-width: 550px) {
+      .newsletter-form {
+        flex-direction: column;
+      }
+      .newsletter-strip {
+        padding: 2rem 1.5rem;
+      }
+      .newsletter-strip h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    /* ---------- FOOTER (same) ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d6cfc8;
+      margin-top: 4rem;
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-grid a {
+      color: #b8afa7;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid #3a3633;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #8f8680;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .header-inner {
+        padding: 0.8rem 1rem;
+      }
+      .logo {
+        font-size: 1.4rem;
+      }
+      .logo span {
+        display: none;
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Foundations of Design home">
+      Foundations <span>of Design</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html" class="active">Categories</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== CATEGORIES HERO ========== -->
+<section class="categories-hero">
+  <div class="categories-hero-inner">
+    <div class="kicker">Browse</div>
+    <h1>Categories</h1>
+    <p>Explore our journal by theme — from interiors and architecture to materials, lighting, and practical guides for considered living.</p>
+  </div>
+</section>
+
+<!-- ========== MAIN CONTENT ========== -->
+<div class="container">
+  <section class="categories-section" aria-label="All categories">
+    <div class="categories-grid">
+
+      <!-- Interiors -->
+      <article class="category-card">
+        <img class="category-card-image"
+             src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=500&fit=crop"
+             alt="Warm, considered living room with natural textures and soft light"
+             loading="lazy">
+        <div class="category-card-content">
+          <div class="category-count">12 articles</div>
+          <h2>Interiors</h2>
+          <p>Room-by-room explorations of colour, texture, and composition — and the quiet decisions that make a space feel whole.</p>
+          <a href="#" class="category-card-link">View category</a>
+        </div>
+      </article>
+
+      <!-- Architecture -->
+      <article class="category-card">
+        <img class="category-card-image"
+             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop"
+             alt="Modern architectural facade with clean lines and natural light"
+             loading="lazy">
+        <div class="category-card-content">
+          <div class="category-count">8 articles</div>
+          <h2>Architecture</h2>
+          <p>Buildings, spaces, and the ideas behind them — from contemporary houses to the quiet intelligence of vernacular forms.</p>
+          <a href="#" class="category-card-link">View category</a>
+        </div>
+      </article>
+
+      <!-- Materials -->
+      <article class="category-card">
+        <img class="category-card-image"
+             src="https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&h=500&fit=crop"
+             alt="Close-up of natural stone and wood material samples"
+             loading="lazy">
+        <div class="category-card-content">
+          <div class="category-count">9 articles</div>
+          <h2>Materials</h2>
+          <p>Stone, timber, clay, metal, and glass — how honest materials age, patina, and bring depth to the spaces we inhabit.</p>
+          <a href="#" class="category-card-link">View category</a>
+        </div>
+      </article>
+
+      <!-- Lighting -->
+      <article class="category-card">
+        <img class="category-card-image"
+             src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&h=500&fit=crop"
+             alt="Sculptural pendant light casting warm glow on a wall"
+             loading="lazy">
+        <div class="category-card-content">
+          <div class="category-count">7 articles</div>
+          <h2>Lighting</h2>
+          <p>The art of light and shadow — natural daylight, layered fixtures, and the small choices that transform atmosphere.</p>
+          <a href="#" class="category-card-link">View category</a>
+        </div>
+      </article>
+
+      <!-- Guides -->
+      <article class="category-card">
+        <img class="category-card-image"
+             src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=500&fit=crop"
+             alt="Open notebook with design sketches and a pencil"
+             loading="lazy">
+        <div class="category-card-content">
+          <div class="category-count">15 articles</div>
+          <h2>Guides</h2>
+          <p>Practical, step-by-step advice on planning, styling, sourcing, and living well in considered spaces.</p>
+          <a href="#" class="category-card-link">View category</a>
+        </div>
+      </article>
+
+      <!-- Profiles -->
+      <article class="category-card">
+        <img class="category-card-image"
+             src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop"
+             alt="Architect's studio desk with drawings and models"
+             loading="lazy">
+        <div class="category-card-content">
+          <div class="category-count">6 articles</div>
+          <h2>Profiles</h2>
+          <p>Conversations with architects, designers, and makers — their processes, influences, and thoughts on the craft.</p>
+          <a href="#" class="category-card-link">View category</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Newsletter full-width -->
+  <section class="newsletter-strip" aria-label="Newsletter signup">
+    <h2>The Design Letter</h2>
+    <p>Monthly essays, practical guides, and a single beautiful idea. No noise — just thoughtful design writing.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to The Design Letter.');">
+      <input type="email" placeholder="Your email address" aria-label="Email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <h4>Foundations of Design</h4>
+      <p style="color:#a89f97; line-height:1.6; max-width:280px;">An independent publication about interior design, architecture, and the art of living well in considered spaces.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Interiors</a></li>
+        <li><a href="index.html">Architecture</a></li>
+        <li><a href="index.html">Materials</a></li>
+        <li><a href="index.html">Lighting</a></li>
+        <li><a href="index.html">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html#team">Editorial Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Foundations of Design. All rights reserved.</span>
+    <span>Made with intention.</span>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    // ---------- MOBILE NAV ----------
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+
+    // ---------- SMOOTH NAV (prevent default for empty links) ----------
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

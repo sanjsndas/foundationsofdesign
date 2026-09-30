@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy · Foundations of Design</title>
+  <meta name="description" content="Privacy Policy for Foundations of Design. Learn how we collect, use, and protect your personal information when you visit our interior design and architecture publication.">
+  <meta name="author" content="Foundations of Design">
+  <link rel="canonical" href="https://www.foundationsofdesign.com/privacy.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy · Foundations of Design">
+  <meta property="og:description" content="How Foundations of Design handles your data and respects your privacy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.foundationsofdesign.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy — Foundations of Design",
+    "url": "https://www.foundationsofdesign.com/privacy.html",
+    "description": "Privacy policy for the interior design and architecture publication Foundations of Design.",
+    "author": {
+      "@type": "Person",
+      "name": "Elena Marchetti"
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES (same as main) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #3d3d3d;
+      --muted: #6e6e6e;
+      --border: #e2ddd8;
+      --accent: #b15c2e;
+      --accent-soft: #f7efe8;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin-left: 0.4rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--ink);
+      line-height: 1;
+      padding: 0.2rem 0.5rem;
+    }
+
+    @media (max-width: 780px) {
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+      }
+      .main-nav.open {
+        display: block;
+      }
+      .main-nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ---------- PAGE HERO / INTRO ---------- */
+    .page-hero {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 1rem;
+      padding: 0 1.5rem;
+    }
+
+    .page-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    .page-hero .subhead {
+      font-size: 1.15rem;
+      color: var(--ink-light);
+      max-width: 720px;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-hero .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      max-width: 720px;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- PRIVACY CONTENT (reading width) ---------- */
+    .privacy-content {
+      max-width: var(--reading-width);
+      margin: 1rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .privacy-content h2 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 2.2rem 0 1rem;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    .privacy-content h3 {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 1.8rem 0 0.6rem;
+      letter-spacing: -0.01em;
+      color: var(--ink-light);
+    }
+
+    .privacy-content p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      color: var(--ink-light);
+      line-height: 1.7;
+    }
+
+    .privacy-content ul {
+      margin: 0.8rem 0 1.5rem 1.5rem;
+      color: var(--ink-light);
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .privacy-content a {
+      color: var(--accent);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .privacy-content a:hover {
+      color: #8f4a22;
+    }
+
+    .privacy-content .note-box {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      margin: 1.8rem 0;
+      border-radius: 0 12px 12px 0;
+      font-size: 0.95rem;
+      color: var(--ink-light);
+    }
+
+    .privacy-content .note-box strong {
+      color: var(--ink);
+    }
+
+    /* back to top / contact link */
+    .back-to-top {
+      display: inline-block;
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .back-to-top:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- FOOTER (same as main) ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d6cfc8;
+      margin-top: 2rem;
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-grid a {
+      color: #b8afa7;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid #3a3633;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #8f8680;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 500px) {
+      .header-inner {
+        padding: 0.8rem 1rem;
+      }
+      .logo {
+        font-size: 1.4rem;
+      }
+      .logo span {
+        display: none;
+      }
+      .page-hero h1 {
+        font-size: 2rem;
+      }
+      .privacy-content h2 {
+        font-size: 1.5rem;
+      }
+      .privacy-content {
+        padding: 0 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Foundations of Design home">
+      Foundations <span>of Design</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <h1>Privacy Policy</h1>
+  <p class="subhead">Your privacy matters. This page explains what data we collect, why we collect it, and how you can exercise your rights.</p>
+  <div class="meta">
+    <span>Last updated: 1 March 2025</span>
+    <span>Effective: 1 March 2025</span>
+  </div>
+</section>
+
+<!-- ========== PRIVACY CONTENT ========== -->
+<main class="privacy-content" role="main">
+
+  <p>Foundations of Design (“we”, “us”, “our”) operates the website <a href="https://www.foundationsofdesign.com">www.foundationsofdesign.com</a> and is committed to protecting the privacy of our readers and visitors. This Privacy Policy describes how we collect, use, share, and safeguard your personal information when you visit our site, subscribe to our newsletter, or interact with us through our contact forms.</p>
+
+  <p>By using our website, you agree to the collection and use of information in accordance with this policy. If you do not agree, please discontinue use of the site.</p>
+
+  <h2>1. Information we collect</h2>
+  <p>We collect several types of information for various purposes to provide and improve our service to you.</p>
+
+  <h3>Information you provide voluntarily</h3>
+  <ul>
+    <li><strong>Contact form data:</strong> When you use our contact form, we collect your name, email address, the subject of your message, and the content of your message.</li>
+    <li><strong>Newsletter subscription:</strong> If you subscribe to our newsletter, we collect your email address and, optionally, your first name.</li>
+    <li><strong>Comments and community interactions:</strong> If we enable comments or community features, any information you voluntarily post may be visible to other users.</li>
+  </ul>
+
+  <h3>Information collected automatically</h3>
+  <p>Like most websites, we automatically collect certain information when you visit:</p>
+  <ul>
+    <li><strong>Log data:</strong> IP address, browser type, browser version, pages visited, time and date of visit, time spent on pages, and other diagnostic data.</li>
+    <li><strong>Device information:</strong> Operating system, device type, screen size, and unique device identifiers.</li>
+    <li><strong>Cookies and tracking technologies:</strong> We use cookies and similar tracking technologies to track activity on our site and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. See our <a href="cookies.html">Cookies Policy</a> for more detail.</li>
+  </ul>
+
+  <h2>2. How we use your information</h2>
+  <p>Foundations of Design uses the collected data for various purposes:</p>
+  <ul>
+    <li>To provide and maintain our website and services.</li>
+    <li>To respond to your inquiries, questions, and requests submitted via the contact form.</li>
+    <li>To send you newsletters, editorial updates, and marketing communications if you have opted in. You can opt out at any time.</li>
+    <li>To monitor and analyse usage trends, preferences, and behaviour to improve our content and user experience.</li>
+    <li>To detect, prevent, and address technical issues, security breaches, or fraudulent activity.</li>
+    <li>To comply with legal obligations and enforce our Terms of Use.</li>
+  </ul>
+
+  <h2>3. Legal basis for processing (GDPR)</h2>
+  <p>If you are a resident of the European Economic Area (EEA), our legal basis for collecting and using your personal information depends on the data concerned and the specific context in which we collect it:</p>
+  <ul>
+    <li><strong>Consent:</strong> When you subscribe to our newsletter or send a message via our contact form, you consent to us processing your data for those purposes.</li>
+    <li><strong>Legitimate interests:</strong> We may process data to improve our services, prevent fraud, and ensure site security, provided your rights do not override these interests.</li>
+    <li><strong>Legal compliance:</strong> We may process data to comply with applicable laws and regulations.</li>
+  </ul>
+
+  <div class="note-box">
+    <strong>Your rights under GDPR:</strong> You have the right to access, correct, delete, or restrict processing of your personal data. You also have the right to data portability and to object to processing. To exercise any of these rights, please contact us at <a href="mailto:privacy@foundationsofdesign.com">privacy@foundationsofdesign.com</a>.
+  </div>
+
+  <h2>4. Data sharing and disclosure</h2>
+  <p>We do not sell, trade, or rent your personal information to third parties. We may share your data only in the following limited circumstances:</p>
+  <ul>
+    <li><strong>Service providers:</strong> Trusted third-party companies that help us operate our website, send newsletters, or analyse traffic (e.g., email delivery platforms, analytics providers). These providers are bound by confidentiality agreements and may only use your data to perform services on our behalf.</li>
+    <li><strong>Legal requirements:</strong> We may disclose your information if required to do so by law or in response to valid requests from public authorities.</li>
+    <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or asset sale, your personal data may be transferred. We will notify you before your data is transferred and becomes subject to a different privacy policy.</li>
+    <li><strong>With your consent:</strong> We may share your information for any other purpose with your explicit consent.</li>
+  </ul>
+
+  <h2>5. Data retention</h2>
+  <p>We retain your personal information only for as long as necessary to fulfil the purposes for which it was collected, including to satisfy legal, accounting, or reporting requirements. Contact form submissions are retained for up to 24 months, after which they are securely deleted. Newsletter subscription data is retained until you unsubscribe.</p>
+
+  <h2>6. Security of your data</h2>
+  <p>The security of your personal data is important to us. We use commercially reasonable administrative, technical, and physical safeguards to protect your information. However, no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security.</p>
+
+  <h2>7. International data transfers</h2>
+  <p>Your information, including personal data, may be transferred to — and maintained on — computers located outside of your state, province, or country where data protection laws may differ. If you are located in the EEA and your data is transferred outside the EEA, we will take steps to ensure that adequate safeguards are in place, such as Standard Contractual Clauses approved by the European Commission.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>Our website is not directed to anyone under the age of 16 (“Children”). We do not knowingly collect personally identifiable information from children under 16. If you become aware that a child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
+
+  <h2>9. Links to other websites</h2>
+  <p>Our website may contain links to third-party websites (e.g., Instagram, Pinterest, Substack) that are not operated by us. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites or services. We strongly advise you to review the privacy policy of every site you visit.</p>
+
+  <h2>10. Changes to this privacy policy</h2>
+  <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the “Last updated” date at the top. You are advised to review this Privacy Policy periodically for any changes. Changes are effective when they are posted on this page.</p>
+
+  <h2>11. Contact us</h2>
+  <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+  <ul>
+    <li>By email: <a href="mailto:privacy@foundationsofdesign.com">privacy@foundationsofdesign.com</a></li>
+    <li>By mail: Foundations of Design, Via dei Piatti 8, 20123 Milano, Italy</li>
+  </ul>
+  <p>For general editorial inquiries, please visit our <a href="contact.html">Contact page</a>.</p>
+
+  <a href="#" class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ Back to top</a>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <h4>Foundations of Design</h4>
+      <p style="color:#a89f97; line-height:1.6; max-width:280px;">An independent publication about interior design, architecture, and the art of living well in considered spaces.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Interiors</a></li>
+        <li><a href="index.html">Architecture</a></li>
+        <li><a href="index.html">Materials</a></li>
+        <li><a href="index.html">Lighting</a></li>
+        <li><a href="index.html">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html">Editorial Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Foundations of Design. All rights reserved.</span>
+    <span>Made with intention.</span>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    // ---------- MOBILE NAV ----------
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+
+    // ---------- SMOOTH NAV (prevent default for empty links) ----------
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    });
+
+    // ---------- OPTIONAL: Back to top smooth scroll already inline, but fallback ----------
+    document.querySelectorAll('.back-to-top').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

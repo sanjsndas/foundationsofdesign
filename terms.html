@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use · Foundations of Design</title>
+  <meta name="description" content="Terms of Use for Foundations of Design — conditions for using our website, intellectual property, and legal notices.">
+  <meta name="author" content="Foundations of Design">
+  <link rel="canonical" href="https://www.foundationsofdesign.com/terms.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terms of Use · Foundations of Design">
+  <meta property="og:description" content="Read the terms and conditions for using the Foundations of Design website and content.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.foundationsofdesign.com/terms.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Use",
+    "url": "https://www.foundationsofdesign.com/terms.html",
+    "description": "Terms of use for Foundations of Design website and journal."
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES (same as about) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #3d3d3d;
+      --muted: #6e6e6e;
+      --border: #e2ddd8;
+      --accent: #b15c2e;
+      --accent-soft: #f7efe8;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER (exactly as about) ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin-left: 0.4rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--ink);
+      line-height: 1;
+      padding: 0.2rem 0.5rem;
+    }
+
+    @media (max-width: 780px) {
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+      }
+      .main-nav.open {
+        display: block;
+      }
+      .main-nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ---------- TERMS HERO ---------- */
+    .terms-hero {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 3.5rem 1.5rem 2.8rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .terms-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .terms-hero .kicker {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .terms-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 3rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .terms-hero p {
+      font-size: 1.05rem;
+      color: var(--ink-light);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .terms-hero h1 {
+        font-size: 2.2rem;
+      }
+      .terms-hero {
+        padding: 2.5rem 1.5rem 2rem;
+      }
+    }
+
+    /* ---------- TERMS CONTENT ---------- */
+    .terms-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 3rem;
+      align-items: start;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .terms-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    .terms-main {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.8rem 2.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .terms-main {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    .terms-main h2 {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin: 2.2rem 0 1rem;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .terms-main h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .terms-main h3 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 1.8rem 0 0.8rem;
+      color: var(--ink);
+    }
+
+    .terms-main p {
+      color: var(--ink-light);
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .terms-main ul, .terms-main ol {
+      margin: 0.8rem 0 1.5rem 1.8rem;
+      color: var(--ink-light);
+    }
+
+    .terms-main li {
+      margin-bottom: 0.6rem;
+      line-height: 1.7;
+    }
+
+    .terms-main strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .terms-main .note {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+
+    .terms-main .note p {
+      margin-bottom: 0;
+      color: var(--ink);
+    }
+
+    .terms-main hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    /* ---------- SIDEBAR (same as about) ---------- */
+    .terms-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .sidebar-widget {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem 1.5rem;
+    }
+
+    .sidebar-widget h3 {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.7rem;
+    }
+
+    .sidebar-widget p {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+    }
+
+    .sidebar-widget ul {
+      list-style: none;
+    }
+
+    .sidebar-widget li {
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .sidebar-widget li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .newsletter-box {
+      background: var(--accent-soft);
+      border: 1px solid #e6d8cd;
+      border-radius: 14px;
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+    }
+
+    .newsletter-box h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .newsletter-box p {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      margin-bottom: 1.2rem;
+    }
+
+    .newsletter-box input {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1px solid #d6c9bd;
+      border-radius: 40px;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      margin-bottom: 0.7rem;
+      outline: none;
+      background: white;
+    }
+
+    .newsletter-box button {
+      width: 100%;
+      background: var(--accent);
+      border: none;
+      border-radius: 40px;
+      padding: 0.75rem;
+      color: white;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: var(--font-sans);
+    }
+
+    .newsletter-box button:hover {
+      background: #8f4a22;
+    }
+
+    /* ---------- FOOTER (same) ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d6cfc8;
+      margin-top: 4rem;
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-grid a {
+      color: #b8afa7;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid #3a3633;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #8f8680;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .header-inner {
+        padding: 0.8rem 1rem;
+      }
+      .logo {
+        font-size: 1.4rem;
+      }
+      .logo span {
+        display: none;
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Foundations of Design home">
+      Foundations <span>of Design</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html" class="active">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== TERMS HERO ========== -->
+<section class="terms-hero">
+  <div class="terms-hero-inner">
+    <div class="kicker">Legal</div>
+    <h1>Terms of Use</h1>
+    <p>These terms govern your use of the Foundations of Design website, journal, and related services. By accessing or using our site, you agree to be bound by them.</p>
+  </div>
+</section>
+
+<!-- ========== MAIN CONTENT ========== -->
+<div class="container">
+  <div class="terms-wrapper">
+
+    <!-- LEFT COLUMN / TERMS MAIN -->
+    <main class="terms-main" role="main">
+
+      <p><strong>Last updated:</strong> 15 March 2025</p>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using the website located at <a href="https://www.foundationsofdesign.com" style="text-decoration:underline;">www.foundationsofdesign.com</a> (the “Site”), you agree to comply with and be bound by these Terms of Use (“Terms”). If you do not agree with any part of these Terms, you must not use the Site.</p>
+      <p>We may update these Terms from time to time. The “Last updated” date at the top of this page indicates when changes were made. Your continued use of the Site after any changes constitutes acceptance of the revised Terms.</p>
+
+      <h2>2. Use of the Site</h2>
+      <p>You agree to use the Site only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else’s use and enjoyment of the Site. Prohibited behaviour includes:</p>
+      <ul>
+        <li>Using the Site in any way that breaches applicable local, national, or international law or regulation.</li>
+        <li>Copying, reproducing, distributing, or republishing any part of the Site’s content without our express written permission, except as permitted under “Intellectual Property” below.</li>
+        <li>Attempting to gain unauthorised access to the Site, its servers, or any connected systems.</li>
+        <li>Transmitting any unsolicited or unauthorised advertising or promotional material.</li>
+        <li>Using automated systems (including “bots” or “spiders”) to access the Site in a manner that sends more request messages than a human can reasonably produce.</li>
+      </ul>
+
+      <h2>3. Intellectual Property</h2>
+      <p>All content on the Site — including but not limited to text, articles, photographs, illustrations, graphics, logos, and the design and layout of the Site — is owned by or licensed to Foundations of Design and is protected by copyright, trademark, and other intellectual property laws.</p>
+      <p>You may:</p>
+      <ul>
+        <li>View, download, and print pages from the Site for your own personal, non-commercial use.</li>
+        <li>Share links to our articles on social media or other platforms, provided you credit Foundations of Design and include a link to the original article.</li>
+      </ul>
+      <p>You may <strong>not</strong>:</p>
+      <ul>
+        <li>Republish, reproduce, or redistribute material from the Site for commercial purposes without our prior written consent.</li>
+        <li>Modify or create derivative works based on our content.</li>
+        <li>Use our name, logo, or branding in any way that implies endorsement or affiliation without our permission.</li>
+      </ul>
+
+      <div class="note">
+        <p><strong>Note on fair use:</strong> Brief quotations from our articles for the purpose of criticism, review, or news reporting are permitted, provided they are accurate and attributed to Foundations of Design with a link to the original.</p>
+      </div>
+
+      <h2>4. User Contributions</h2>
+      <p>We may offer opportunities for users to submit comments, feedback, or other content. By submitting content to the Site, you grant us a non-exclusive, royalty-free, perpetual, and worldwide licence to use, reproduce, edit, and display that content in connection with the Site and our other publications.</p>
+      <p>You represent and warrant that you own or have the necessary rights to any content you submit, and that it does not violate the rights of any third party or contain unlawful, defamatory, or obscene material. We reserve the right to remove any user contribution at our sole discretion.</p>
+
+      <h2>5. Third-Party Links</h2>
+      <p>The Site may contain links to third-party websites, services, or resources. These links are provided for your convenience only. We do not endorse and are not responsible for the content, privacy practices, or accuracy of any third-party sites. You access them at your own risk and should review their terms and privacy policies.</p>
+
+      <h2>6. Disclaimer of Warranties</h2>
+      <p>The information on the Site is provided on an “as is” and “as available” basis. While we strive to ensure that all content is accurate and up to date, we make no warranties or representations of any kind, express or implied, regarding the completeness, accuracy, reliability, or suitability of the information.</p>
+      <p>Foundations of Design is a journal of opinion and information. Nothing on the Site constitutes professional architectural, legal, financial, or safety advice. You should consult a qualified professional before making decisions based on our content.</p>
+
+      <h2>7. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, Foundations of Design and its editors, contributors, and affiliates shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of or in connection with your use of, or inability to use, the Site or any content on it.</p>
+      <p>This includes, without limitation, any loss of data, loss of profit, or damage to property, even if we have been advised of the possibility of such damages.</p>
+
+      <h2>8. Indemnification</h2>
+      <p>You agree to indemnify and hold harmless Foundations of Design, its editors, contributors, and affiliates from any claims, liabilities, damages, losses, or expenses (including reasonable legal fees) arising out of your violation of these Terms or your use of the Site.</p>
+
+      <h2>9. Privacy</h2>
+      <p>Your use of the Site is also governed by our <a href="privacy.html" style="text-decoration:underline;">Privacy Policy</a>, which explains how we collect, use, and protect your personal information. By using the Site, you consent to the practices described in the Privacy Policy.</p>
+
+      <h2>10. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of Portugal, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the Site shall be subject to the exclusive jurisdiction of the courts of Lisbon, Portugal.</p>
+
+      <h2>11. Severability</h2>
+      <p>If any provision of these Terms is found to be invalid or unenforceable, that provision shall be severed and the remaining provisions shall continue in full force and effect.</p>
+
+      <h2>12. Contact</h2>
+      <p>If you have any questions about these Terms, please contact us at:</p>
+      <p style="margin-bottom:0.5rem;"><strong>Foundations of Design</strong><br>
+      Lisbon, Portugal<br>
+      <a href="mailto:legal@foundationsofdesign.com" style="text-decoration:underline;">legal@foundationsofdesign.com</a></p>
+
+      <hr>
+
+      <p style="font-size:0.9rem; color:var(--muted);">These Terms of Use were last reviewed and updated on 15 March 2025.</p>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="terms-sidebar" role="complementary">
+
+      <!-- Quick nav / summary -->
+      <div class="sidebar-widget">
+        <h3>On This Page</h3>
+        <ul>
+          <li><a href="#" style="text-decoration:underline;">1. Acceptance of Terms</a></li>
+          <li><a href="#" style="text-decoration:underline;">2. Use of the Site</a></li>
+          <li><a href="#" style="text-decoration:underline;">3. Intellectual Property</a></li>
+          <li><a href="#" style="text-decoration:underline;">4. User Contributions</a></li>
+          <li><a href="#" style="text-decoration:underline;">5. Third-Party Links</a></li>
+          <li><a href="#" style="text-decoration:underline;">6. Disclaimer of Warranties</a></li>
+          <li><a href="#" style="text-decoration:underline;">7. Limitation of Liability</a></li>
+          <li><a href="#" style="text-decoration:underline;">8. Indemnification</a></li>
+          <li><a href="#" style="text-decoration:underline;">9. Privacy</a></li>
+          <li><a href="#" style="text-decoration:underline;">10. Governing Law</a></li>
+          <li><a href="#" style="text-decoration:underline;">11. Severability</a></li>
+          <li><a href="#" style="text-decoration:underline;">12. Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal resources -->
+      <div class="sidebar-widget">
+        <h3>Legal Pages</h3>
+        <ul>
+          <li><a href="privacy.html" style="text-decoration:underline;">Privacy Policy</a></li>
+          <li><a href="cookies.html" style="text-decoration:underline;">Cookies Policy</a></li>
+          <li><a href="disclaimer.html" style="text-decoration:underline;">Disclaimer</a></li>
+          <li><a href="terms.html" style="text-decoration:underline;">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter (same as about) -->
+      <div class="newsletter-box">
+        <h3>The Design Letter</h3>
+        <p>Monthly essays, practical guides, and a single beautiful idea. No noise.</p>
+        <input type="email" placeholder="Your email address" aria-label="Email address">
+        <button type="button" onclick="alert('Thank you for subscribing to The Design Letter.')">Subscribe</button>
+      </div>
+
+      <!-- Contact -->
+      <div class="sidebar-widget">
+        <h3>Questions?</h3>
+        <p>If anything here is unclear, we’re happy to help.</p>
+        <p style="font-size:0.85rem;"><a href="contact.html" style="text-decoration:underline;">Contact the editorial team →</a></p>
+        <p style="font-size:0.85rem; margin-top:0.5rem;"><a href="mailto:legal@foundationsofdesign.com" style="text-decoration:underline;">legal@foundationsofdesign.com</a></p>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <h4>Foundations of Design</h4>
+      <p style="color:#a89f97; line-height:1.6; max-width:280px;">An independent publication about interior design, architecture, and the art of living well in considered spaces.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Interiors</a></li>
+        <li><a href="index.html">Architecture</a></li>
+        <li><a href="index.html">Materials</a></li>
+        <li><a href="index.html">Lighting</a></li>
+        <li><a href="index.html">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html#team">Editorial Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Foundations of Design. All rights reserved.</span>
+    <span>Made with intention.</span>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    // ---------- MOBILE NAV ----------
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+
+    // ---------- SMOOTH NAV (prevent default for empty links) ----------
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>

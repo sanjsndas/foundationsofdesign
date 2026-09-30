@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Foundations of Design</title>
+  <meta name="description" content="Get in touch with the Foundations of Design editorial team. We welcome thoughtful questions, story ideas, and collaboration inquiries.">
+  <meta name="author" content="Foundations of Design">
+  <link rel="canonical" href="https://www.foundationsofdesign.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact · Foundations of Design">
+  <meta property="og:description" content="Reach the editorial team behind Foundations of Design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.foundationsofdesign.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Foundations of Design",
+    "url": "https://www.foundationsofdesign.com/contact.html",
+    "description": "Contact page for the interior design and architecture publication Foundations of Design.",
+    "author": {
+      "@type": "Person",
+      "name": "Elena Marchetti"
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & VARIABLES (same as main) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-light: #3d3d3d;
+      --muted: #6e6e6e;
+      --border: #e2ddd8;
+      --accent: #b15c2e;
+      --accent-soft: #f7efe8;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1200px;
+      --reading-width: 720px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 0.3rem;
+    }
+
+    .logo span {
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      margin-left: 0.4rem;
+    }
+
+    .main-nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .main-nav a {
+      color: var(--ink-light);
+      padding-bottom: 0.2rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--ink);
+      line-height: 1;
+      padding: 0.2rem 0.5rem;
+    }
+
+    @media (max-width: 780px) {
+      .main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        padding: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.04);
+      }
+      .main-nav.open {
+        display: block;
+      }
+      .main-nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ---------- CONTACT HERO ---------- */
+    .contact-hero {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 1rem;
+      padding: 0 1.5rem;
+    }
+
+    .contact-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-hero p {
+      font-size: 1.15rem;
+      color: var(--ink-light);
+      max-width: 620px;
+      margin-bottom: 2rem;
+    }
+
+    /* ---------- CONTACT GRID ---------- */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 800px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* ---------- FORM ---------- */
+    .contact-form-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem 2rem 2.2rem;
+    }
+
+    .contact-form-wrap h2 {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      letter-spacing: -0.01em;
+    }
+
+    .contact-form-wrap .form-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.6rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.4rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--ink-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      background: var(--bg);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(177, 92, 46, 0.08);
+    }
+
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+      line-height: 1.5;
+    }
+
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%236e6e6e' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+
+    .form-group .error-msg {
+      font-size: 0.75rem;
+      color: #b33a3a;
+      margin-top: 0.3rem;
+      display: none;
+    }
+
+    .form-group.has-error input,
+    .form-group.has-error textarea,
+    .form-group.has-error select {
+      border-color: #b33a3a;
+    }
+
+    .form-group.has-error .error-msg {
+      display: block;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: var(--accent);
+      border: none;
+      border-radius: 40px;
+      padding: 0.95rem 2rem;
+      color: white;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      font-family: var(--font-sans);
+      letter-spacing: 0.3px;
+      margin-top: 0.4rem;
+    }
+
+    .submit-btn:hover {
+      background: #8f4a22;
+    }
+
+    .submit-btn:active {
+      transform: scale(0.99);
+    }
+
+    /* success message */
+    .form-success {
+      background: #e9f5e9;
+      border: 1px solid #b8d9b8;
+      border-radius: 10px;
+      padding: 1.2rem 1.5rem;
+      color: #2c5e2c;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      display: none;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
+    /* ---------- CONTACT INFO ---------- */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem 1.5rem;
+    }
+
+    .info-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .info-card p {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    .info-card a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .info-card a:hover {
+      text-decoration: underline;
+    }
+
+    .info-card .label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .info-card .value {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .info-card .value:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ---------- MAP PLACEHOLDER ---------- */
+    .map-placeholder {
+      background: var(--accent-soft);
+      border: 1px solid #e6d8cd;
+      border-radius: 14px;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--ink-light);
+    }
+
+    .map-placeholder .map-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .map-placeholder p {
+      font-size: 0.9rem;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+
+    /* ---------- SOCIAL ---------- */
+    .social-links {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--ink-light);
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+
+    .social-links a:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ---------- FAQ MINI ---------- */
+    .contact-faq {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    .contact-faq h2 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 1.2rem 0;
+      cursor: pointer;
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      font-size: 1.05rem;
+      font-family: var(--font-serif);
+    }
+
+    .faq-question span {
+      font-size: 1.4rem;
+      color: var(--accent);
+      transition: transform 0.15s;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.25s ease-out;
+      color: var(--ink-light);
+      font-size: 0.95rem;
+      padding-right: 2rem;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding-top: 0.8rem;
+    }
+
+    .faq-item.active .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    /* ---------- FOOTER (same as main) ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d6cfc8;
+      margin-top: 2rem;
+      padding: 3rem 0 2rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .footer-grid h4 {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.6rem;
+    }
+
+    .footer-grid a {
+      color: #b8afa7;
+    }
+
+    .footer-grid a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 2.5rem auto 0;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid #3a3633;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #8f8680;
+    }
+
+    @media (max-width: 700px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 500px) {
+      .header-inner {
+        padding: 0.8rem 1rem;
+      }
+      .logo {
+        font-size: 1.4rem;
+      }
+      .logo span {
+        display: none;
+      }
+      .contact-hero h1 {
+        font-size: 2rem;
+      }
+      .contact-form-wrap {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Foundations of Design home">
+      Foundations <span>of Design</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+        <li><a href="categories.html">Categories</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== CONTACT HERO ========== -->
+<section class="contact-hero">
+  <h1>Get in touch</h1>
+  <p>We welcome thoughtful questions, story ideas, and collaboration inquiries. Whether you're an architect, designer, or simply curious about the built environment, we'd love to hear from you.</p>
+</section>
+
+<!-- ========== CONTACT GRID ========== -->
+<div class="contact-grid">
+
+  <!-- LEFT: FORM -->
+  <div class="contact-form-wrap">
+    <h2>Send a message</h2>
+    <p class="form-note">We read every message and typically respond within 2–3 working days.</p>
+
+    <div class="form-success" id="formSuccess">
+      ✓ Thank you — your message has been sent. We'll be in touch soon.
+    </div>
+
+    <form id="contactForm" novalidate>
+      <div class="form-group" id="nameGroup">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Clara Moreau" required>
+        <div class="error-msg">Please enter your name.</div>
+      </div>
+
+      <div class="form-group" id="emailGroup">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <div class="error-msg">Please enter a valid email address.</div>
+      </div>
+
+      <div class="form-group" id="subjectGroup">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" required>
+          <option value="">Select a topic…</option>
+          <option value="editorial">Editorial inquiry</option>
+          <option value="story">Story idea / pitch</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="advertising">Advertising</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+        <div class="error-msg">Please select a subject.</div>
+      </div>
+
+      <div class="form-group" id="messageGroup">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+        <div class="error-msg">Please write a message.</div>
+      </div>
+
+      <button type="submit" class="submit-btn">Send message</button>
+    </form>
+  </div>
+
+  <!-- RIGHT: INFO -->
+  <div class="contact-info">
+
+    <div class="info-card">
+      <h3>Editorial office</h3>
+      <p>
+        <span class="label">Email</span>
+        <span class="value"><a href="mailto:hello@foundationsofdesign.com">hello@foundationsofdesign.com</a></span>
+        <span class="label">Press &amp; partnerships</span>
+        <span class="value"><a href="mailto:press@foundationsofdesign.com">press@foundationsofdesign.com</a></span>
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Write to us</h3>
+      <p>
+        Foundations of Design<br>
+        Via dei Piatti 8<br>
+        20123 Milano, Italy
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Follow</h3>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Substack">Substack</a>
+      </div>
+    </div>
+
+    <div class="map-placeholder">
+      <span class="map-icon">📍</span>
+      <p>Our editorial studio is in the heart of Milan's design district. Visits by appointment only.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========== MINI FAQ ========== -->
+<section class="contact-faq" id="faq">
+  <h2>Before you write</h2>
+
+  <div class="faq-item">
+    <div class="faq-question">Do you accept unsolicited story pitches? <span>+</span></div>
+    <div class="faq-answer">Yes — we welcome pitches from writers, architects, and designers. Please include a short summary (200 words max), your intended angle, and a brief bio. We respond to all pitches within two weeks.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">How can I advertise or partner with Foundations of Design? <span>+</span></div>
+    <div class="faq-answer">We offer limited, carefully curated partnerships with brands aligned with our editorial values. Please write to press@foundationsofdesign.com with a short description of your brand and what you have in mind.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Can I republish your articles? <span>+</span></div>
+    <div class="faq-answer">We occasionally allow syndication. Please get in touch with details of your publication and the specific article you're interested in. We do not allow full republishing without written permission.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">Do you offer design consultations? <span>+</span></div>
+    <div class="faq-answer">Elena and the team occasionally take on select consulting projects. These are limited and typically long-form. If you'd like to explore working together, please describe your project in the form above and select "Collaboration".</div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <h4>Foundations of Design</h4>
+      <p style="color:#a89f97; line-height:1.6; max-width:280px;">An independent publication about interior design, architecture, and the art of living well in considered spaces.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Interiors</a></li>
+        <li><a href="index.html">Architecture</a></li>
+        <li><a href="index.html">Materials</a></li>
+        <li><a href="index.html">Lighting</a></li>
+        <li><a href="index.html">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="about.html">Editorial Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Advertise</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Foundations of Design. All rights reserved.</span>
+    <span>Made with intention.</span>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  (function() {
+    // ---------- MOBILE NAV ----------
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+      });
+    }
+
+    // ---------- FAQ TOGGLE ----------
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+
+    // ---------- CONTACT FORM VALIDATION ----------
+    const form = document.getElementById('contactForm');
+    const successMsg = document.getElementById('formSuccess');
+
+    const nameGroup = document.getElementById('nameGroup');
+    const emailGroup = document.getElementById('emailGroup');
+    const subjectGroup = document.getElementById('subjectGroup');
+    const messageGroup = document.getElementById('messageGroup');
+
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const subjectSelect = document.getElementById('subject');
+    const messageInput = document.getElementById('message');
+
+    function clearErrors() {
+      [nameGroup, emailGroup, subjectGroup, messageGroup].forEach(g => g.classList.remove('has-error'));
+    }
+
+    function validateEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      clearErrors();
+      let isValid = true;
+
+      if (nameInput.value.trim() === '') {
+        nameGroup.classList.add('has-error');
+        isValid = false;
+      }
+
+      if (!validateEmail(emailInput.value.trim())) {
+        emailGroup.classList.add('has-error');
+        isValid = false;
+      }
+
+      if (subjectSelect.value === '') {
+        subjectGroup.classList.add('has-error');
+        isValid = false;
+      }
+
+      if (messageInput.value.trim() === '') {
+        messageGroup.classList.add('has-error');
+        isValid = false;
+      }
+
+      if (!isValid) return;
+
+      // Simulate successful submission
+      successMsg.classList.add('show');
+      form.reset();
+      setTimeout(() => {
+        successMsg.classList.remove('show');
+      }, 6000);
+    });
+
+    // remove error on input
+    [nameInput, emailInput, subjectSelect, messageInput].forEach(el => {
+      el.addEventListener('input', () => {
+        el.closest('.form-group').classList.remove('has-error');
+      });
+      el.addEventListener('change', () => {
+        el.closest('.form-group').classList.remove('has-error');
+      });
+    });
+
+    // ---------- SMOOTH NAV (prevent default for empty links) ----------
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
